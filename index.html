@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Duo Portfolio</title>
+
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <!-- Navigation -->
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand">Student<span>Duo</span></a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Open navigation"
+        aria-controls="site-navigation"
+        aria-expanded="false"
+      >
+        <span class="menu-text sr-only">Open navigation</span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+        <span class="menu-line"></span>
+      </button>
+
+      <nav class="site-nav" id="site-navigation" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="container hero-layout">
+        <div class="hero-content">
+          <p class="section-kicker">STUDENT PORTFOLIO</p>
+          <h1>Two students. One creative portfolio.</h1>
+          <p class="hero-text">
+            Welcome to our personal portfolio website. We are students who enjoy
+            learning, building projects, and improving our technology skills.
+          </p>
+
+          <div class="button-group">
+            <a href="#about" class="button button-primary">Meet Us</a>
+            <a href="#projects" class="button button-secondary">View Projects</a>
+          </div>
+        </div>
+
+        <aside class="duo-panel" aria-label="Student portfolio summary">
+          <p class="panel-label">Our student team</p>
+
+          <div class="duo-avatars">
+            <div class="avatar avatar-one">LG</div>
+            <div class="avatar avatar-two">JL</div>
+          </div>
+
+          <div class="duo-student">
+            <span>01</span>
+            <div>
+              <strong>Leo Garcia Jr</strong>
+              <small>Computer Science Student</small>
+            </div>
+          </div>
+
+          <div class="duo-student">
+            <span>02</span>
+            <div>
+              <strong>John Loid Villafuerte</strong>
+              <small>Information Technology Student</small>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">MEET THE STUDENTS</p>
+          <h2>About Us</h2>
+          <p>
+            This section introduces both students.
+             
+          </p>
+        </div>
+
+        <div class="profile-grid">
+          <!-- Student 1 -->
+          <article class="profile-card">
+            <div class="photo-area">
+              <img
+                id="student-1-preview"
+                class="profile-image"
+                src="1000004108.png"
+                alt="Leo Garcia Jr profile placeholder"
+              />
+
+              <input
+                id="student-1-photo"
+                class="photo-input"
+                type="file"
+                accept="image/png, image/jpeg, image/webp"
+                data-preview="student-1-preview"
+                data-status="student-1-status"
+                data-student="Leo Garcia Jr"
+              />
+
+              <label for="student-1-photo" class="upload-label">
+              </label>
+
+              <p id="student-1-status" class="upload-status" aria-live="polite">
+                JPG, PNG, or WebP. Maximum size: 5 MB.
+              </p>
+            </div>
+
+            <div class="profile-content">
+              <p class="student-number">STUDENT 01</p>
+              <h3>Leo Garcia Jr</h3>
+              <p class="student-role">Computer Science Student</p>
+
+              <p>
+                I am a student who enjoys web design, programming, and creating
+                user-friendly digital experiences. I like learning new tools and
+                turning ideas into useful websites.
+              </p>
+
+              <ul class="profile-facts">
+                <li><strong>Course:</strong> B.S. Computer Science</li>
+                <li><strong>Interest:</strong> Web Development</li>
+                <li><strong>Favorite Tool:</strong> VS Code</li>
+              </ul>
+            </div>
+          </article>
+
+          <!-- Student 2 -->
+          <article class="profile-card">
+            <div class="photo-area">
+              <img
+                id="student-2-preview"
+                class="profile-image"
+                src="1000028908.jpg"
+                alt="John Loid Villafuerte profile placeholder"
+              />
+
+              <input
+                id="student-2-photo"
+                class="photo-input"
+                type="file"
+                accept="image/png, image/jpeg, image/webp"
+                data-preview="student-2-preview"
+                data-status="student-2-status"
+                data-student="Noah Kim"
+              />
+
+              <label for="student-2-photo" class="upload-label">
+                Upload Noah's Photo
+              </label>
+
+              <p id="student-2-status" class="upload-status" aria-live="polite">
+                JPG, PNG, or WebP. Maximum size: 5 MB.
+              </p>
+            </div>
+
+            <div class="profile-content">
+              <p class="student-number">STUDENT 02</p>
+              <h3>John Lod Villafuerte</h3>
+              <p class="student-role">Information Technology Student</p>
+
+              <p>
+                I am interested in solving technical problems, building simple
+                applications, and working with teams. I enjoy exploring software,
+                databases, and digital systems.
+              </p>
+
+              <ul class="profile-facts">
+                <li><strong>Course:</strong> B.S. Information Technology</li>
+                <li><strong>Interest:</strong> Software Development</li>
+                <li><strong>Favorite Tool:</strong> GitHub</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section section-tint" id="skills">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">WHAT WE KNOW</p>
+          <h2>Skills</h2>
+          <p>
+            Here are some technical and personal skills that both students are
+            currently developing.
+          </p>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card">
+            <span class="skill-index">01</span>
+            <h3>Leo's Skills</h3>
+            <p>
+              Leo focuses on front-end development and designing clean web pages.
+            </p>
+
+            <div class="skill-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+              <span>Figma</span>
+              <span>UI Design</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-index">02</span>
+            <h3>John Loid Skills</h3>
+            <p>
+              Noah focuses on programming, systems, and organizing project data.
+            </p>
+
+            <div class="skill-tags">
+              <span>Python</span>
+              <span>Java</span>
+              <span>SQL</span>
+              <span>GitHub</span>
+              <span>Problem Solving</span>
+            </div>
+          </article>
+
+          <article class="skill-card">
+            <span class="skill-index">03</span>
+            <h3>Shared Skills</h3>
+            <p>
+              Both students work together and continue learning through group
+              activities and school projects.
+            </p>
+
+            <div class="skill-tags">
+              <span>Teamwork</span>
+              <span>Communication</span>
+              <span>Research</span>
+              <span>Presentation</span>
+              <span>Creativity</span>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">OUR WORK</p>
+          <h2>Projects</h2>
+          <p>
+            Replace these sample projects with your actual school projects,
+            websites, applications, or research work.
+          </p>
+        </div>
+
+        <div class="project-grid">
+          <article class="project-card">
+            <p class="project-owner">Leo Garcia Jr · Front-End Project</p>
+            <h3>Campus Planner</h3>
+            <p>
+              A simple website that helps students organize class schedules,
+              deadlines, and school activities.
+            </p>
+
+            <div class="project-tags">
+              <span>HTML</span>
+              <span>CSS</span>
+              <span>JavaScript</span>
+            </div>
+
+            <a
+              href="https://github.com/"
+              target="_blank"
+              rel="noopener"
+              class="project-link"
+            >
+              View Project ↗
+            </a>
+          </article>
+
+          <article class="project-card">
+            <p class="project-owner">John Loid Villafuerte · Programming Project</p>
+            <h3>Student Record System</h3>
+            <p>
+              A basic application for storing student information, grades, and
+              attendance records.
+            </p>
+
+            <div class="project-tags">
+              <span>Python</span>
+              <span>SQL</span>
+              <span>Database</span>
+            </div>
+
+            <a
+              href="https://github.com/"
+              target="_blank"
+              rel="noopener"
+              class="project-link"
+            >
+              View Project ↗
+            </a>
+          </article>
+
+          <article class="project-card">
+            <p class="project-owner">leo Garcia & John loid Villafuerte · Team Project</p>
+            <h3>Study Buddy Platform</h3>
+            <p>
+              A collaborative project that helps students find study partners
+              and share learning resources.
+            </p>
+
+            <div class="project-tags">
+              <span>Teamwork</span>
+              <span>Design</span>
+              <span>Development</span>
+            </div>
+
+            <a
+              href="https://github.com/"
+              target="_blank"
+              rel="noopener"
+              class="project-link"
+            >
+              View Project ↗
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section section-tint" id="contact">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">GET IN TOUCH</p>
+          <h2>Contact</h2>
+          <p>
+            You can contact either student using the sample contact details below.
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-copy">
+            <div class="contact-list">
+              <a class="contact-person" href="mailto:ava.santos@example.com">
+                <span class="contact-badge">AS</span>
+                <span>
+                  <strong> Leo Garcia</strong>
+                  <small> garcialeojr6@gmail.com</small>
+                </span>
+              </a>
+
+              <a class="contact-person" href="mailto:noah.kim@example.com">
+                <span class="contact-badge badge-gold">NK</span>
+                <span>
+                  <strong>John Loid Villafuerte</strong>
+                  <small>villafuertejohnloid@ gmail.com</small>
+                </span>
+              </a>
+            </div>
+
+            <div class="social-links">
+              <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+              <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contact-form">
+            <div class="form-field">
+              <label for="name">Your Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter your name" required />
+            </div>
+
+            <div class="form-field">
+              <label for="email">Your Email</label>
+              <input type="email" id="email" name="email" placeholder="you@email.com" required />
+            </div>
+
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Write your message here..."
+                required
+              ></textarea>
+            </div>
+
+            <button type="submit" class="button button-primary">
+              Send Message
+            </button>
+
+            <p id="form-message" class="form-message" aria-live="polite"></p>
+            <p class="form-note">
+              This is a front-end demo form. Connect it to Formspree, Netlify Forms,
+              or your own backend to receive real messages.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container footer-content">
+      <p>© <span id="year"></span> Student Duo Portfolio. All rights reserved.</p>
+      <a href="#home">Back to top ↑</a>
+    </div>
+  </footer>
+</body>
+</html>
